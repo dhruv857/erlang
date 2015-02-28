@@ -1,0 +1,88 @@
+Last login: Mon Nov 24 02:17:53 on ttys000
+Dhruvils-MacBook-Air:~ Dhruv$ erl s 1
+Erlang/OTP 17 [erts-6.1] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+Eshell V6.1  (abort with ^G)
+1> cd("Desktop").
+/Users/Dhruv/Desktop
+ok
+2> cd("erlang"). 
+/Users/Dhruv/Desktop/erlang
+ok
+3> c(plists).
+{ok,plists}
+4> c(multicore).
+{ok,multicore}
+5> multicore:test1().
+sort: results equal? = true, speedup = 1.3470528021837413
+ok
+6> multicore:test2().
+fibo: results equal? = true, speedup = 1.9805322581386124
+ok
+7> halt().
+Dhruvils-MacBook-Air:~ Dhruv$ erl s 2
+Erlang/OTP 17 [erts-6.1] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+Eshell V6.1  (abort with ^G)
+1> cd("Desktop").
+/Users/Dhruv/Desktop
+ok
+2> cd("erlang"). 
+/Users/Dhruv/Desktop/erlang
+ok
+3> c(plists).
+{ok,plists}
+4> c(multicore).
+{ok,multicore}
+5> multicore:test1().
+sort: results equal? = true, speedup = 1.426408991000705
+ok
+6> multicore:test2().
+fibo: results equal? = true, speedup = 2.022065653938672
+ok
+7> halt().
+Dhruvils-MacBook-Air:~ Dhruv$ erl s 4
+Erlang/OTP 17 [erts-6.1] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+Eshell V6.1  (abort with ^G)
+1> cd("Desktop").
+/Users/Dhruv/Desktop
+ok
+2> cd("erlang"). 
+/Users/Dhruv/Desktop/erlang
+ok
+3> c(plists).
+{ok,plists}
+4> c(multicore).
+{ok,multicore}
+5> multicore:test1().
+sort: results equal? = true, speedup = 1.596660354622138
+ok
+6> multicore:test2().
+fibo: results equal? = true, speedup = 2.0072139246235396
+ok
+7> halt().
+Dhruvils-MacBook-Air:~ Dhruv$ elr s 16
+-bash: elr: command not found
+Dhruvils-MacBook-Air:~ Dhruv$ erl s 16
+Erlang/OTP 17 [erts-6.1] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+Eshell V6.1  (abort with ^G)
+1> cd("Desktop").
+/Users/Dhruv/Desktop
+ok
+2> cd("erlang"). 
+/Users/Dhruv/Desktop/erlang
+ok
+3> c(plists).
+{ok,plists}
+4> c(multicore).
+{ok,multicore}
+5> multicore:test1().
+sort: results equal? = true, speedup = 1.58788652365463
+ok
+6> multicore:test2().
+fibo: results equal? = true, speedup = 1.9929602588312
+ok
+7> halt().
+Dhruvils-MacBook-Air:~ Dhruv$ 
